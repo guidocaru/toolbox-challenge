@@ -1,8 +1,9 @@
+import { getFilesData } from "../services/client/index.js";
+
 export class FilesController {
   static async getFilesData(req, res) {
-    //execute getFilesData (api client)
-    res.json({
-      test: "testie",
-    });
+    const filesData = await getFilesData();
+
+    res.json(filesData);
   }
 }
