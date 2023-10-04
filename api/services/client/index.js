@@ -1,18 +1,14 @@
 import { getFileList, getFileByName } from "../tbx/secret.js";
-
-//call secret/files
-//call secret/files/{file}
-//parse all data
-//return data
+import { formatData } from "../../utils/formatter.js";
 
 export const getFilesData = async () => {
   const { files } = await getFileList();
 
   const filesContent = await getFilesContent(files);
 
-  parseData(filesContent);
+  const data = await formatData(filesContent);
 
-  return filesContent;
+  return data;
 };
 
 const getFilesContent = async (files) => {
