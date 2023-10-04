@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.135);
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(219, 42, 84);
+}

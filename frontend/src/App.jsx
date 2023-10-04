@@ -1,13 +1,16 @@
-import Table from "./Table.jsx";
+import FilesTable from "./components/FilesTable.jsx";
+import NavBar from "./components/NavBar.jsx";
+import "./styles/App.css";
 
 const App = () => {
   return (
-    <main>
-      <div>
-        <h1>Toolbox Challenge</h1>
-        <Table></Table>
-      </div>
-    </main>
+    <div>
+      <NavBar></NavBar>
+      <main>
+        <p className="title">Files Data</p>
+        <FilesTable></FilesTable>
+      </main>
+    </div>
   );
 };
 
