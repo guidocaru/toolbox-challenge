@@ -3,7 +3,6 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
   table-layout: fixed;
 }
 
@@ -21,16 +20,17 @@ table tr {
 table th,
 table td {
   padding: 0.625em;
-  text-align: center;
 }
 
 table th {
+  text-align: left;
   font-size: 0.85em;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
+  background-color: rgb(126, 126, 126);
+  color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   table {
     border: 0;
   }
@@ -60,7 +60,6 @@ table th {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: 0.8em;
-    text-align: right;
   }
 
   table td::before {

@@ -1,4 +1,4 @@
-//import Table from "react-bootstrap/Table";
+import Table from "react-bootstrap/Table";
 import "../styles/FilesTable.css";
 
 import { useFiles } from "../hooks/useFiles";
@@ -9,7 +9,7 @@ const FilesTable = () => {
   if (files.length > 0) {
     return (
       <div className="table">
-        <table>
+        <Table>
           <thead>
             <tr>
               <th>Filename</th>
@@ -30,7 +30,7 @@ const FilesTable = () => {
               ))
             )}
           </tbody>
-        </table>
+        </Table>
       </div>
     );
   } else {
