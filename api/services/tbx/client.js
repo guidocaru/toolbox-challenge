@@ -1,11 +1,10 @@
 import axios from "axios";
-import "dotenv/config";
 
-const token = process.env.TBX_ECHO_SERVER_TOKEN;
-const baseURL = process.env.TBX_ECHO_SERVER_URL;
+const token = "aSuperSecretKey"
+const baseUrl = "https://echo-serv.tbxnet.com/v1"
 
 const client = axios.create({
-  baseURL: baseURL,
+  baseURL: baseUrl,
   headers: {
     Authorization: `Bearer ${token}`,
   },

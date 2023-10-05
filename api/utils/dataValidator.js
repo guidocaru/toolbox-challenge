@@ -70,7 +70,9 @@ const sanitizeHex = (hex) => {
 };
 
 export const forTesting = {
+  sanitizeValues,
   sanitizeText,
   sanitizeNumber,
   sanitizeHex,
+  sanitizeProps
 };

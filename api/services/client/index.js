@@ -1,5 +1,4 @@
 import { getFileList, getFileByName } from "../tbx/secret.js";
-import { formatData } from "../../utils/formatter.js";
 import { processContent } from "../../utils/dataProcessor.js";
 
 export const getFilesData = async () => {
