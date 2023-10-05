@@ -68,3 +68,9 @@ const sanitizeHex = (hex) => {
   if (hexPattern.test(hex) && hex.length === 32) return hex;
   return null;
 };
+
+export const forTesting = {
+  sanitizeText,
+  sanitizeNumber,
+  sanitizeHex,
+};
