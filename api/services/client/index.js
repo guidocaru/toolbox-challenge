@@ -9,6 +9,12 @@ export const getFilesData = async () => {
   return filesContent;
 };
 
+export const getFiles = async () => {
+  const { files } = await getFileList();
+
+  return files;
+};
+
 const getFilesContent = async (files) => {
   const filesContent = await Promise.all(
     files.map(async (file) => {
