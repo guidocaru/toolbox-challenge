@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.135);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .brand {
