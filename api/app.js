@@ -3,7 +3,7 @@ import { filesRouter } from "./routes/files.js";
 import { corsMiddleware } from "./middlewares/cors.js";
 import 'dotenv/config'
 
-const app = express();
+export const app = express();
 app.use(json());
 app.use(corsMiddleware());
 app.disable('x-powered-by')
