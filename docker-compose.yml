@@ -15,5 +15,5 @@ services:
     volumes:
       - ./api:/usr/src/app
       - /usr/src/app/node_modules
-    expose:
-      - 1234
+    # expose:
+    #   - 1234
