@@ -47,7 +47,7 @@ Frontend
 ```sh
 cd frontend
 npm install
-npm run dev
+npm start
 ```
 
 This will get both API and frontend running:
