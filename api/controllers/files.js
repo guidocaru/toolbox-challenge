@@ -2,14 +2,20 @@ import { getFilesData, getFiles } from "../services/client/index.js";
 
 export class FilesController {
   static async getFilesData(req, res) {
-    const filesData = await getFilesData();
-    if (filesData) return res.json(filesData);
-    res.status(500).json({ message: "an error occured" });
+    try {
+      const filesData = await getFilesData();
+      res.json(filesData);
+    } catch (error) {
+      res.status(500).json({ message: "An error occurred while fetching files data.", error: error.message });
+    }
   }
 
   static async getFilesList(req, res) {
-    const files = await getFiles();
-    if (files) return res.json(files);
-    res.status(500).json({ message: "an error occured" });
+    try {
+      const files = await getFiles();
+      res.json(files);
+    } catch (error) {
+      res.status(500).json({ message: "An error occurred while fetching files list.", error: error.message });
+    }
   }
 }
