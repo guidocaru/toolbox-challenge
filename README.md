@@ -3,7 +3,7 @@
 
 This is a Fullstack Code Challenge created for Toolbox company. Inside this repository, you will discover the two components of the challenge: the API and the Frontend.
 
-To run this project immediately, please refer to the instructions provided in the next section. Below that, you will also find specifications regarding the technologies used in this project as well as some technical information.
+To run this project immediately, please refer to the instructions provided in the next section. Below that, you will also find specifications regarding the technologies used in this project.
 
 ### How to run
 
@@ -47,7 +47,7 @@ Frontend
 ```sh
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 This will get both API and frontend running:
@@ -63,3 +63,24 @@ In order to run the API tests, simply navigate to the API directory and run the 
 npm run test
 ```
 This will run some unit and integration tests.
+
+### Technologies
+
+**API**
+
+- Main language: Javascript
+- Frameworks/libraries: Node.js (14) and Express.js
+- Package Manager: npm
+- Testing: Mocha and Chai
+- Additional libraries: csvtojson
+
+**Frontend**
+
+- Main language: Javascript
+- Frameworks/libraries: Vite, React.js and Node.js (16)
+- Package Manager: npm
+- Additional libraries: React Bootstrap
+
+**Global**
+
+- Docker and Docker Compose
